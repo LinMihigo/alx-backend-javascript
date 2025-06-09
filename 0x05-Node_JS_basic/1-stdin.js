@@ -6,13 +6,13 @@ const rl = readline.createInterface({
 });
 
 
-console.log("Welcome to ALx, what is your name?")
+process.stdout.write("Welcome to ALx, what is your name?\n");
 
 rl.on('line', (input) => {
-  console.log(`Your name is: ${input}`);
+  console.log(`Your name is: ${input}\n`);
   rl.close();
 });
 
 rl.on('close', () => {
-  console.log("This important software is now closing");
+  process.stdout.write("This important software is now closing\n");
 });
