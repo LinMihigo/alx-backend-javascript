@@ -9,7 +9,7 @@ const rl = readline.createInterface({
 process.stdout.write("Welcome to ALx, what is your name?\n");
 
 rl.on('line', (input) => {
-  console.log(`Your name is: ${input}\n`);
+  process.stdout.write(`Your name is: ${input}\n`);
   rl.close();
 });
 
